@@ -1,0 +1,16 @@
+@import "variables.scss";
+
+.logo__body {
+   @extend %flexCenter;
+   .logo__conteiner {
+      position: absolute;
+      top: 0;
+      margin-top: 4.018%;
+      .logo__link {
+         .logo__link-a {
+            .logo-img {
+            }
+         }
+      }
+   }
+}

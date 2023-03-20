@@ -1,0 +1,50 @@
+@import "variables.scss";
+
+.header__body {
+   @extend %flexCenter;
+   background-image: radial-gradient(837.78% 378.29% at 69.44% -79.86%, rgba(31, 35, 39, 0) 0%, #191C1F 47.89%, rgba(31, 35, 39, 0) 100%) ,url("../images/header/header.png");
+      .header__conteiner {
+         display: flex;
+         height: 700px;
+      .header__menu {
+         margin-top: 30px;
+      }
+      .header__content {
+         width: 746px;
+         height: 642px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         @media  screen and (max-width:768px){
+            text-align: center;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+         }
+         .header__subtitle {
+            .header__subtitle-text {
+               @extend %barlow__bold;
+               text-transform: $text-transform;
+               color: $color;
+               font-size: 18px;
+               line-height: 20px;
+            }
+         }
+         .header__title {
+            margin-top: 5px;
+            .header__title-text {
+               @extend %barlow__bold-title;
+               text-transform: $text-transform;
+            }
+         }
+         .header__text {
+            margin-top: 10px;
+            overflow-wrap: break-word;
+            width: auto;
+            .header__text-text {
+               @extend %barlow__regular-subtitle;
+            }
+         }
+      }
+   }
+}

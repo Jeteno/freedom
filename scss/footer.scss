@@ -1,0 +1,35 @@
+@import "variables.scss";
+
+.footer__body {
+   background-color: #14171A;
+   @extend %flexCenter;
+   .footer__conteiner {
+      height: 110px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .footer__list {
+         display: flex;
+         justify-content: flex-end;
+         .footer__li {
+            margin-left: 16.68%;
+            .footer__link {
+               .footer__img {
+               }
+            }
+         }
+         .twitter {
+            .link-twitter {
+            }
+         }
+         .facebook {
+            .link-facebook {
+            }
+         }
+         .instagram {
+            .link-instagram {
+            }
+         }
+      }
+   }
+}

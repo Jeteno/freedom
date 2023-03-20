@@ -1,0 +1,91 @@
+.touch-bar__body .touch-bar__conteiner .touch-bar__icons .touch-bar__icon .touch-bar__text .touch-bar__icon-subtitle, .touch-bar__body .touch-bar__conteiner .touch-bar__icons .touch-bar__icon .touch-bar__text .touch-bar__icon-title, .touch-bar__body .touch-bar__conteiner .touch-bar__title {
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+}
+
+.touch-bar__body .touch-bar__conteiner .touch-bar__icons .touch-bar__icon .touch-bar__text .touch-bar__icon-title, .touch-bar__body .touch-bar__conteiner .touch-bar__title {
+  color: #FFFFFF;
+  font-size: calc(20px + 0.8333333333vw);
+  line-height: 36px;
+}
+
+.touch-bar__body .touch-bar__conteiner .touch-bar__icons .touch-bar__icon .touch-bar__text .touch-bar__icon-subtitle {
+  color: #FFFFFF;
+  font-size: calc(15px + 0.625vw);
+  line-height: 30px;
+}
+
+.touch-bar__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.touch-bar__body {
+  background-color: #191C1F;
+}
+.touch-bar__body .touch-bar__conteiner {
+  height: 200px;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .touch-bar__body .touch-bar__conteiner {
+    height: auto;
+    padding: 1%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .touch-bar__body .touch-bar__conteiner .touch-bar__title {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.touch-bar__body .touch-bar__conteiner .touch-bar__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 66.2%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .touch-bar__body .touch-bar__conteiner .touch-bar__icons {
+    margin-top: 2%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+}
+.touch-bar__body .touch-bar__conteiner .touch-bar__icons .touch-bar__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.touch-bar__body .touch-bar__conteiner .touch-bar__icons .touch-bar__icon .touch-bar__icon-image {
+  margin-right: 20px;
+}

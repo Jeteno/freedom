@@ -1,0 +1,62 @@
+@import "variables.scss";
+
+.facilities__body {
+   background-color: #1F2327;
+   @extend %flexCenter;
+   .facilities__conteiner {
+      height: 600px;
+      text-transform: $text-transform;       
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 12.5%;
+      @media screen and (max-width:768px){
+         justify-content: center;
+      }
+      .facilities__images {
+         .facilities__img {
+            max-width: 100%;
+         }
+      }
+      .facilities__content {
+         @extend %barlow__bold-text;
+         width: 443px;
+         @media screen and (max-width:768px){
+            text-align: center;
+         }
+         .facilities__subtitle {
+            .facilities__subtitle-text {
+            }
+         }
+         .facilities__title {
+            margin-top: 1.19%;            
+            .facilities__title-text {
+               @extend %barlow__bold-subtitle;
+            }
+         }
+         .facilities__list {
+            margin-top: 5.94%;
+            @media screen and (max-width:768px){
+               flex-wrap: wrap;
+               display: flex;
+               justify-content: space-around;
+            }
+               .facilities__list-title {
+                  margin-bottom: 2.378%;
+                  display: flex;
+                  &::before {
+                     content: ' ';
+                     background-image: url("../images/svg/check.svg");
+                     background-repeat: no-repeat;
+                     background-position: center;
+                     width: 24px;
+                     height: 24px;
+                     text-align: center;
+                     margin-right: 3.387%;
+                  }
+            }
+         }
+      }
+   }
+}

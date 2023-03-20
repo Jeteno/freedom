@@ -1,0 +1,57 @@
+$font-family: 'Barlow', sans-serif;
+$color: #FFFFFF;
+$text-transform: uppercase;
+
+%barlow__bold {
+   font-family: $font-family;
+   font-weight: 700;
+}
+%barlow__regular {
+   font-family: $font-family;
+   font-weight: 400; 
+}
+%barlow__bold-title {
+   @extend %barlow__bold;
+   color: $color;
+   // font-size: 64px;
+   font-size: calc(25px + 39 * (100vw/1440));
+   line-height: 75px;
+}
+%barlow__bold-subtitle {
+   @extend %barlow__bold;
+   color: $color;
+   // font-size: 32px;
+   font-size: calc(20px + 12 * (100vw/1440));
+   line-height: 36px;
+}
+%barlow__regular-subtitle-icons {
+   @extend %barlow__bold;
+   color: $color;
+   // font-size: 24px;
+   font-size: calc(15px + 9 * (100vw/1440));
+   line-height: 30px;
+}
+%barlow__bold-text {
+   @extend %barlow__bold;
+   color: $color;
+   font-size: 16px;
+   line-height: 20px;
+}
+%barlow__regular-subtitle {
+   @extend %barlow__regular;
+   color: $color;
+   // font-size: 24px;
+   font-size: calc(15px + 9 * (100vw/1440));
+   line-height: 30px;
+}
+%barlow__regular-subtitle-p {
+   @extend %barlow__regular;
+   color: $color;
+   font-size: 18px;
+   line-height: 25px;
+}
+%flexCenter{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}

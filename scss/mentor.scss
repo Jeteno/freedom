@@ -1,0 +1,49 @@
+@import "variables.scss";
+
+.mentor__body {
+   background-color: #191C1F;
+   @extend %flexCenter;
+   .mentor__conteiner {
+      height: 600px;
+      text-transform: $text-transform;       
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+      flex-wrap: wrap;
+      margin-top: 12.5%;
+      @media screen and (max-width:768px){
+         justify-content: center;
+      }
+      .mentor__images {
+         .mentor__img {
+            max-width: 100%;
+         }
+      }
+      .mentor__content {
+         @extend %barlow__bold-text;
+         width: 443px;
+         @media screen and (max-width:768px) {
+            text-align: center;
+         }
+         .mentor__subtitle {
+            .mentor__subtitle-text {
+            }
+         }
+         .mentor__title {
+            margin-top: 1.19%;   
+            @extend %barlow__bold-subtitle;         
+            .mentor__title-text {
+            }
+         }
+         .mentor__text {
+            margin-top: 2.26%;
+            @extend %barlow__regular-subtitle-p;
+            text-transform: none;
+               .mentor__text-p {
+                  margin-bottom: 2.378%;
+            }
+         }
+      }
+   }
+}

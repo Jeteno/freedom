@@ -1,0 +1,43 @@
+@import "variables.scss";
+
+.application__body {
+   @extend %flexCenter;
+   background-image: radial-gradient(570.42% 265.28% at 47.92% 0%, #191C1F 0%, rgba(25, 28, 31, 0) 88.96%, rgba(25, 28, 31, 0.04) 100%) ,url("../images/footer/fon/fon.png");
+      .application__conteiner {
+         display: flex;
+         align-items: center;
+         flex-direction: column;
+         height: 495px;
+         .application__content {
+            width: 746px;
+            height: 642px;
+            @extend %flexCenter;
+            flex-direction: column;
+            text-align: center;
+            .application__subtitle {
+               .application__subtitle-text {
+                  @extend %barlow__bold;
+                  text-transform: $text-transform;
+                  color: $color;
+                  font-size: 18px;
+                  line-height: 20px;
+               }
+            }
+            .application__title {
+               margin-top: 5px;
+               .application__title-text {
+                  @extend %barlow__bold-title;
+                  text-transform: $text-transform;
+               }
+            }
+            .application__text {
+               margin-top: 10px;
+               overflow-wrap: break-word;
+               width: auto;
+               .application__text-text {
+                  @extend %barlow__regular-subtitle;
+               }
+            }
+         }
+   }
+}

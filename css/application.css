@@ -1,0 +1,76 @@
+.application__body .application__conteiner .application__content .application__subtitle .application__subtitle-text, .application__body .application__conteiner .application__content .application__title .application__title-text {
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+}
+
+.application__body .application__conteiner .application__content .application__text .application__text-text {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+}
+
+.application__body .application__conteiner .application__content .application__title .application__title-text {
+  color: #FFFFFF;
+  font-size: calc(25px + 2.7083333333vw);
+  line-height: 75px;
+}
+
+.application__body .application__conteiner .application__content .application__text .application__text-text {
+  color: #FFFFFF;
+  font-size: calc(15px + 0.625vw);
+  line-height: 30px;
+}
+
+.application__body .application__conteiner .application__content, .application__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.application__body {
+  background-image: radial-gradient(570.42% 265.28% at 47.92% 0%, #191C1F 0%, rgba(25, 28, 31, 0) 88.96%, rgba(25, 28, 31, 0.04) 100%), url("../images/footer/fon/fon.png");
+}
+.application__body .application__conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 495px;
+}
+.application__body .application__conteiner .application__content {
+  width: 746px;
+  height: 642px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+.application__body .application__conteiner .application__content .application__subtitle .application__subtitle-text {
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 20px;
+}
+.application__body .application__conteiner .application__content .application__title {
+  margin-top: 5px;
+}
+.application__body .application__conteiner .application__content .application__title .application__title-text {
+  text-transform: uppercase;
+}
+.application__body .application__conteiner .application__content .application__text {
+  margin-top: 10px;
+  overflow-wrap: break-word;
+  width: auto;
+}

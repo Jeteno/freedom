@@ -1,0 +1,51 @@
+@import "variables.scss";
+
+.touch-bar__body {
+   background-color: #191C1F;
+   @extend %flexCenter;
+   .touch-bar__conteiner {
+      height: 200px;
+      text-transform: $text-transform;       
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+      @media screen and (max-width:768px) {
+         height: auto;
+         padding: 1%;
+      }
+      .touch-bar__title {
+         @extend %barlow__bold-subtitle;
+         @media screen and (max-width:768px) {
+            margin-left: auto;
+            margin-right: auto;
+         }
+      }
+      .touch-bar__icons {
+            display: flex;
+            justify-content: flex-end;
+            width: 66.2%;
+            justify-content: space-between;
+            @media screen and (max-width:768px) {
+               margin-top: 2%;
+               justify-content: space-between;
+               align-items: center;
+               width: 100%;
+            }
+            .touch-bar__icon {
+               display: flex;
+               .touch-bar__icon-image {
+                  margin-right: 20px;
+               }
+               .touch-bar__text {
+                  .touch-bar__icon-title {
+                     @extend %barlow__bold-subtitle;
+                  }
+                  .touch-bar__icon-subtitle {
+                     @extend %barlow__regular-subtitle-icons;
+                  }   
+               }
+            }
+      }
+   }
+}

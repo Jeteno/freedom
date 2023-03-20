@@ -1,0 +1,18 @@
+.conteiner {
+  width: 1110px;
+}
+@media screen and (max-width: 1024px) {
+  .conteiner {
+    width: 800px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .conteiner {
+    width: 600px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .conteiner {
+    width: 350px;
+  }
+}
